@@ -1,22 +1,40 @@
 import { useNavigate } from "react-router-dom";
+import Card2 from "./components/Card2.js";
 
 const App = () => {
   const navigate = useNavigate();
 
+  const goToExperiences = () => navigate("/experiences");
+  const goToProjects = () => navigate("/projects");
+  const goToStudies = () => navigate("/studies");
+
   return (
-    <>
-      <h1>Welcome To Choi Space</h1>
+    <div
+      className="flex flex-col items-center justify-center h-screen"
+      style={{
+        backgroundImage:
+          'url("https://cdn.pixabay.com/video/2019/10/11/27770-365891067_tiny.jpg")',
+      }}
+    >
+      <header className="text-3xl pb-20 text-white">
+        Welcome To Choi Space
+      </header>
 
-      <div className="text-2xl text-red-600 font-bold">
-        Tailwind 적용 테스트
-      </div>
-
-      <main>
-        <article onClick={() => navigate("/experiences")}>Experiences</article>
-        <article onClick={() => navigate("/projects")}>Projects</article>
-        <article onClick={() => navigate("/studies")}>Study Logs</article>
+      <main className="flex gap-10">
+        <Card2
+          onClick={goToExperiences}
+          imageUrl="https://i.pinimg.com/736x/58/cf/3d/58cf3ddf2a95a0a4e88ffc1c5ec1c530.jpg"
+        />
+        <Card2
+          onClick={goToProjects}
+          imageUrl="https://i.pinimg.com/736x/73/df/c1/73dfc104387f112c59a6b7efabbc738d.jpg"
+        />
+        <Card2
+          onClick={goToStudies}
+          imageUrl="https://i.pinimg.com/736x/5f/6e/f0/5f6ef0bb33d7925328e49e6e32064dd0.jpg"
+        />
       </main>
-    </>
+    </div>
   );
 };
 
