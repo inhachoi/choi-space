@@ -13,7 +13,7 @@ const App = () => {
       className="flex flex-col items-center justify-center h-screen"
       style={{
         backgroundImage:
-          'url("https://cdn.pixabay.com/video/2019/10/11/27770-365891067_tiny.jpg")',
+          'url("https://menu.mt.co.kr/animated/mt/2023/03/2023030907550793674_animated_0758441.gif")',
       }}
     >
       <header className="text-3xl pb-20 text-white">
