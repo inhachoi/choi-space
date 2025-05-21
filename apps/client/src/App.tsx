@@ -4,36 +4,19 @@ const App = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="text-center space-y-12">
-        <h1>Welcome To Choi Space</h1>
+    <>
+      <h1>Welcome To Choi Space</h1>
 
-        <div className=" text-red-600">TEST</div>
-
-        <div className="flex justify-center gap-8">
-          <article
-            className="w-40 h-40 bg-white border border-gray-300 rounded-xl shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-100 transition"
-            onClick={() => navigate("/experiences")}
-          >
-            Experiences
-          </article>
-
-          <article
-            className="w-100 h-100 bg-white border border-gray-300 rounded-xl shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-100 transition"
-            onClick={() => navigate("/projects")}
-          >
-            Projects
-          </article>
-
-          <article
-            className="w-40 h-40 bg-white border border-gray-300 rounded-xl shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-100 transition"
-            onClick={() => navigate("/studies")}
-          >
-            Study Logs
-          </article>
-        </div>
+      <div className="text-2xl text-red-600 font-bold">
+        Tailwind 적용 테스트
       </div>
-    </div>
+
+      <main>
+        <article onClick={() => navigate("/experiences")}>Experiences</article>
+        <article onClick={() => navigate("/projects")}>Projects</article>
+        <article onClick={() => navigate("/studies")}>Study Logs</article>
+      </main>
+    </>
   );
 };
 
