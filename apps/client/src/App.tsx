@@ -16,7 +16,10 @@ const App = () => {
           'url("https://menu.mt.co.kr/animated/mt/2023/03/2023030907550793674_animated_0758441.gif")',
       }}
     >
-      <header className="text-3xl pb-20 text-white">
+      <header
+        className="glitch text-3xl pb-20 text-white"
+        data-text="Welcome To Choi Space"
+      >
         Welcome To Choi Space
       </header>
 
