@@ -1,5 +1,7 @@
+import GlitchText from "../components/GlitchText/GlitchText";
+
 const Experiences = () => {
-  return <div>경험 페이지</div>;
+  return <GlitchText />;
 };
 
 export default Experiences;

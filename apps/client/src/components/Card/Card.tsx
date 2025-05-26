@@ -1,10 +1,6 @@
 import { useEffect, useRef } from "react";
 import "./Card.css";
-
-type CardProps = {
-  onClick: () => void;
-  imageUrl: string;
-};
+import type { CardProps } from "../../types/card";
 
 const Card = ({ onClick, imageUrl }: CardProps) => {
   const containerRef = useRef<HTMLDivElement>(null);

@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:400,400italic,500,500italic");
+
+@keyframes wiggle {
+  0% {
+    transform: skewX(24deg);
+  }
+  2.5% {
+    transform: skewX(-8deg);
+  }
+  5% {
+    transform: skewX(55deg);
+  }
+  7.5% {
+    transform: skewX(-90deg);
+  }
+  10% {
+    transform: skewX(29deg);
+  }
+  12.5% {
+    transform: skewX(-90deg);
+  }
+  15% {
+    transform: skewX(3deg);
+  }
+  17.5% {
+    transform: skewX(-2deg);
+  }
+  20% {
+    transform: skewX(1deg);
+  }
+  22.5% {
+    transform: skewX(10deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}
+
+body {
+  overflow: hidden;
+}
+
+.glitch-header {
+  display: flex;
+}
+
+.glitch-text {
+  position: relative;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 1px 1px rgba(246, 0, 153, 0.8), -1px -1px rgba(15, 210, 255, 0.8),
+    -1px 0px rgba(255, 210, 0, 1);
+  transition: text-shadow 0.1s ease-out;
+
+  animation: wiggle 2.5s infinite;
+}
