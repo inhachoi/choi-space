@@ -1,0 +1,29 @@
+.container {
+  width: 220px;
+  height: 310px;
+  transition: all 0.1s;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  width: 220px;
+  height: 310px;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(48, 57, 53, 0.6) 45%,
+    rgba(34, 45, 40, 0.6) 45%,
+    transparent 54%
+  );
+  filter: brightness(1.1) opacity(0.8);
+  mix-blend-mode: color-dodge;
+  background-size: 150% 150%;
+  background-position: 100%;
+  transition: all 0.1s;
+}
+.card {
+  width: 220px;
+  height: 310px;
+  background-image: url(https://i.pinimg.com/736x/5f/6e/f0/5f6ef0bb33d7925328e49e6e32064dd0.jpg);
+  background-size: cover;
+}
