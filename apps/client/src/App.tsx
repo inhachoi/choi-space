@@ -17,9 +17,7 @@ const App = () => {
           'url("https://menu.mt.co.kr/animated/mt/2023/03/2023030907550793674_animated_0758441.gif")',
       }}
     >
-      <header className="glitch text-3xl pb-20 text-white">
-        <GlitchText />
-      </header>
+      <GlitchText />
 
       <main className="flex gap-10">
         <Card
